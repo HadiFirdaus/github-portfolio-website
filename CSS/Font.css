@@ -1,0 +1,13 @@
+@font-face {
+    font-family: metal;
+    src: url(Metal\ Head.otf);
+    font-weight: 600;
+}
+span{font-family: metal!important; font-weight: 600;}
+body, h1, h2, h3, h4, h5, h6, p{font-family: 'arvo'; font-weight: 200;}
+
+@font-face{
+    font-family: arvo;
+    src: url(Arvo-Regular.ttf);
+    font-weight: 200;
+}

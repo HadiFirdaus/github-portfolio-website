@@ -1,0 +1,12 @@
+@font-face {
+    font-family: metal;
+    src: url(Metal\ Head.otf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: metal;
+    src: url(MetalShred.ttf);
+    font-weight: 600;
+}
+span[style]{font-family: metal; font-weight: 600;}
+span{font-family: metal!important; font-weight: 100;}

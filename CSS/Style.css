@@ -1,0 +1,38 @@
+.padding-32{padding-top: 32px!important; padding-bottom: 32px!important;}
+.center{text-align: center!important;}
+.container:after,.container:before,.row-padding:before,.row-padding:after{content: ""; display:table; clear: both;}
+.jumbo{font-size: 64px!important;}
+.hide-small{display: none!important;}
+.image{max-width: 100%; height: auto;}
+
+.content{margin-left: auto; margin-right: auto;}
+.justify{text-align: justify!important;}
+.text-grey{color: #757575!important;}
+.padding-64{padding-top: 64px!important; padding-bottom: 64px!important;}
+.text-light-grey{color: #f1f1f1!important;}
+.opacity{opacity: 0.60;}
+.padding-16{padding-top: 16px!important; padding-bottom: 16px!important;}
+.wide{letter-spacing: 4px;}
+.white{color: #fff!important; background-color: #fff!important;}
+.dark-grey{color: #fff!important; background-color: #616161!important;}
+.half{padding: 0.8px; width: 49.99%;float: left;}
+.section{margin-top: 16px!important; margin-bottom: 16px!important;}
+.text-white{color: #fff!important;}
+.xxlarge{font-size: 36px!important;}
+.margin-right{margin-right: 16px!important;}
+.xlarge{font-size: 24px!important;}
+.hover-opacity :hover{opacity: 0.60;}
+.medium{font-size: 15px!important;}
+.hover-text-green :hover{color: #4caf50!important;}
+.fa :hover{opacity: 0.70;}
+.fa{padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    margin: 5px 2px;
+}
+.fa-linkedin{
+    background: #007bb5;
+    color: white;
+}
