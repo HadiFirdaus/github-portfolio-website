@@ -1,0 +1,81 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /*#nav {background: red;}*/
+    #top{display: none;}
+    #nav{display: block;}
+   
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    /*#nav {background: green;}*/
+    #top{display: none;}
+    #nav{display: block;}
+    
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    /*#nav {background: blue;}*/
+    #nav{display: none;}
+    #top{display: block;}
+
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    /*#nav {background: orange;}*/
+    #nav{display: none;}
+    #top{display: block;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    /*#nav {background: pink;}*/
+    #nav{display: none;}
+    #top{display: block;}
+  }
+
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+    background-color: black;
+}
+
+nav{
+    overflow: hidden;
+    background-color: #333;
+    width: 100px;
+    height: 100%;
+    z-index: 1;
+}
+
+nav a{
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+nav a i{
+    font-size: 25px;
+    font-weight: 100;
+}
+#top{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+#top a{
+    float: left;
+    padding: 14px 16px;
+    display: block;
+    background-color: #333;
+    color:#f2f2f2;
+}
