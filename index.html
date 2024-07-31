@@ -1,252 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Hadi Firdaus</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Font.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <style>
-            *, *::before, *::after{box-sizing: inherit;}
-            h1, h2, h3, h4, h5, h6{font-weight: 400; margin: 10px 0;}
-            
-            body{
-                background-color: #000;
-                color: #fff;
-                margin: 0;
-                font-size: 15px;
-                line-height: 1.5;
-            }
-            nav{
-                width: 120px;
-                height: 100%;
-                position: fixed;
-                
-                overflow: auto;
-                background-color: #222;
-            }
-            a{
-                display: block;
-                text-align: center;
-                text-decoration: none;
-                padding: 20px;
-                color: #fff;
-            }
-            i{font-size: 30px;}
-            a:hover{
-                background-color: #000;
-                color: white;
-            }
-            header, footer, div, form{display: block;}
-            img{vertical-align: middle; border-style:none;}
-            p{display:block; margin-block-start: 1em; margin-block-end:1em;}
-            hr{border: 0; border-top: 1px solid #eee; margin:20px 0;}
-            hr{box-sizing:content-box; height:0; overflow:visible;}
-            button, select{text-transform: none;}
-            button, input{font: inherit; margin: 0;}
-            button, input{overflow: visible;}
-            input{
-                text-rendering: auto;
-                letter-spacing: normal;
-                word-spacing: normal;
-                text-transform: none;
-                text-indent: 0;
-                text-shadow: none;
-                text-align: start;
-                appearance: textfield;
-                cursor: text;
-            }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I’m Your Name, a passionate web developer with expertise in HTML, CSS, and JavaScript. I love creating clean, user-friendly websites and applications.</p>
+        </div>
+    </section>
 
-
-            .padding-large{padding: 12px 24px;}
-            .container{padding: 0.01em 16px;}
-            .container::after, .container::before{content: " "; display: table; clear: both;}
-            .padding-32{padding-top: 32px; padding-bottom: 32px;}
-            .center{text-align: center;}
-            .black{color: #fff; background-color: #000;}
-            .jumbo{font-size: 64px;}
-            .image{max-width: 100%; height:auto;}
-
-            .justify{text-align: justify!important;}
-
-            .text-light-grey{color: #f1f1f1;}
-            .section{margin-top: 16px; margin-bottom: 16px;}
-            fa-fw{width: 1.28571429em; text-align:center;}
-            .text-white{color:#fff;}
-            .margin-right{margin-right:16px!important;}
-            .xxlarge{font-size: 36px!important;}
-
-            .content{max-width:980px; margin-left: auto; margin-right: auto;}   /*important*/
-            .padding-64{padding-top:64px; padding-bottom:64px;}
-            .text-grey{color:#757575;}
-            .x-large{font-size:24px;}
-            .fa{display: inline-block; font-size: inherit; text-rendering: auto;}
-            .hover-opacity:hover, .opacity{opacity: 0.60;}
-            .medium{font-size: 15px;}
-
-            .padding-16{padding-top: 16px!important; padding-bottom: 16px!important;}
-            .wide{letter-spacing: 4px;}
-            .white{color: #000!important; background-color: #fff!important;}
-            .dark-grey{color: #fff; background-color: #616161;}
-            .light-grey{color: #000; background-color: #f1f1f1;}
-            .padding-large{padding: 12px 24px;}
-            .button{user-select: none;}
-            .button{border: none; 
-                    display: inline-block;
-                    vertical-align: middle;
-                    overflow: hidden;
-                    text-decoration: none;
-                    text-align: center;
-                    cursor: pointer;
-                    white-space: nowrap;
-            }
-
-            .row-padding{
-                content: " ";
-                display: table;
-                clear: both;
-            }
-            .half{
-                float: left;
-                width: 42%;   
-            }
-            .row-padding, .half{padding: 8px 8px 8px 8px;}
-
-            form{margin-top: 0em;}
-            .input{
-                padding: 8px;
-                display: block;
-                border: none;
-                border-bottom: 1px solid #ccc;
-                width: 100%;
-            }
-        </style>
-        <script src="https://kit.fontawesome.com/ba61ee3922.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!--Navigation bar-->
-        <nav>
-            <img src="Photo/Hadi.JPG" alt="Hadi" style="width: 120px;">
-            <a href="#home">
-                <i class="fas fa-home"></i>
-                <p>Home</p>
-            </a>
-            <a href="#about">
-                <i class="fas fa-align-center"></i>
-                <p>About</p>
-            </a>
-            <a href="#photo">
-                <i class="fas fa-th-large"></i>
-                <p>Photo</p>
-            </a>
-            <a href="#contact">
-                <i class="fas fa-mobile-alt"></i>
-                <p>Contact</p>
-            </a>
-        </nav><!--End of navigation bar-->
-
-        <!--Main-->
-        <div id="main" class="padding-large">
-            <!--Header/home-->
-            <header id="home" class="container padding-32 center black">
-                <h1 class="jumbo">I am
-                    <span>
-                    HADI FIRDAUS</span></h1>
-                <p>Live Long Learner</p>
-                <img src="Photo/Behance Background.png" alt="Behance" class="image" width="992" height="1108">
-            </header><!--End of header-->
-            
-            <!--About-->
-            <div id="about" class="content justify text-grey padding-64">
-                <h2 class="text-light-grey">My Name</h2>
-                <hr style="width: 200px;" class="opacity">
-                <p>Some interesting text about me...I am currently completing my Bachelor's degree in Information and Communication
-                    Technology, major in Game Technology from Universiti Teknikal Malaysia Melaka (UTeM).
-                    The courses in this program aided me to unlock programming skills through professional correspondence.
-                    My education helped build a strong foundation and professional discipline, allowing me to
-                    continue to develop in-demand skills.
-                    These valuable educational experiences helped set me up to build
-                    my career path in an in-demand and competitive industry.
-                    One area where I particularly flourished was in Game Engine Project,
-                    making me well-suited as programmer where I oversee developers and designers.
-                    I found that my best grades were Game Programming, 3D Game Development, Computer Game Mechanics, Mathematics, Game Physics and many more.
-                    These knowledges enhance the way I view concepts, later could be come in-handy when developing games.
-                    The skills that I gained during university have helped me grow my career quickly.
-                    I have above-average communication skills, and, I have continued to refine my competencies.
-                    Since then, I keep continuing to sharpen my skills and knowledges by developing multiple games, designing website, practising my programming languages every single day.
-                </p>
-            </div><!--End of About-->
-
-            <!--Porfolio-->
-            <div class="padding-64 content" id="photo">
-                <h2 class="text-light-grey">My Photos</h2>
-                <hr style="width: 200px;" class="opacity">
-
-                <!--Photo-->
-                <div class="row-padding" style="margin: 0 -16px;"> 
-                    <div class="half">
-                        <img src="Photo/Screenshot (3).png" alt="3" style="width: 100%;">
-                        <img src="Photo/Screenshot (4).png" alt="4" style="width: 100%;">
-                        <img src="Photo/Screenshot (5).png" alt="5" style="width: 100%;">
-                    </div>
-                    <div class="half">
-                        <img src="Photo/Screenshot (6).png" alt="6" style="width: 100%;">
-                        <img src="Photo/Screenshot (26).png" alt="26" style="width: 100%;">
-                        <img src="Photo/Screenshot (27).png" alt="27" style="width: 100%;">
-                    </div>
-                </div><!--End of photo-->
-            </div><!--End of Porfolio-->
-
-            <!--Contact-->
-            <div id="contact" class="padding-64 content text-grey">
-                <h2 class="text-light-grey">Contact Me</h2>
-                <hr style="width: 200px;" class="opacity">
-                <div class="section">
-                    <p>
-                        <i class="fas fa-map-marker-alt fa fa-fw text-white xxlarge margin-right"></i>
-                        Sungai Besar, Selangor
-                    </p>
-                    <p>
-                        <i class="fas fa-phone-alt fa fa-fw text-white xxlarge margin-right"></i>
-                        Phone: 0109212911
-                    </p>
-                    <p>
-                        <i class="fas fa-at fa fa-fw text-white xxlarge margin-right"></i>
-                        Email: hadi97firdaus@yahoo.com
-                    </p>
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1.</p>
                 </div>
-                <br>
-                <p>Let's get in touch</p>
-                <!--Form-->
-                <form action="" target="_blank">
-                    <p>
-                        <input type="text" class="input padding-16" placeholder="Name" required name="Name">
-                    </p>
-                    <p>
-                        <input type="email" class="input padding-16" placeholder="Email" required name="Email">
-                    </p>
-                    <p>
-                        <input type="text" class="input padding-16" placeholder="Subject" required name="Subject">
-                    </p>
-                    <p>
-                        <input type="text" class="input padding-16" placeholder="Message" required name="Message">
-                    </p>
-                    <p>
-                        <button class="button light-grey padding-large" type="submit">
-                            <i class="material-icons" style="font-size: 60px; color: black;"> cloud </i>
-                        </button>
-                    </p>
-                </form><!--End of Form-->
-            </div><!--End of Contact-->
+                <div class="portfolio-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2.</p>
+                </div>
+                <!-- Add more portfolio items here -->
+            </div>
+        </div>
+    </section>
 
-            <!--Footer-->
-            <footer class="content padding-64 text-grey x-large">
-                <i class="fa fab fa-facebook-square hover-opacity"><a href="MyWebsite.html"></a></i>
-                <i class="fa fab fa-twitter-square hover-opacity"><a href="MyWebsite.html"></a></i>
-                <i class="fa fab fa-whatsapp hover-opacity"><a href="https://wa.me/0109212911" target="_blank"></a></i>
-                <i class="fa fab fa-linkedin hover-opacity"><a href="https://www.linkedin.com/" target="_blank"></a></i>
-            </footer><!--End of footer-->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you would like to get in touch, please email me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+        </div>
+    </section>
 
-        </div> <!--End of main-->
-    </body>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
