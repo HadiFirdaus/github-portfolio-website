@@ -169,3 +169,20 @@ span{font-family: metal!important; font-weight: 100;}
             transform: scale(0.95);
         }
 
+ /* Basic styling for the footer */
+        footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
