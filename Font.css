@@ -1,3 +1,24 @@
+/* Media query for larger screens (horizontal layout) */
+@media (min-width: 768px) {
+    .nav-menu {
+        display: flex; /* Changes layout to horizontal */
+    }
+
+    .nav-menu li {
+        display: inline; /* Aligns list items horizontally */
+    }
+
+    .nav-menu a {
+        display: inline-block; /* Ensures padding and alignment in horizontal layout */
+        padding: 10px 20px; /* Adjust padding as needed */
+        border-bottom: none; /* Removes border in horizontal layout */
+    }
+
+    .nav-menu a:hover {
+        background-color: #444; /* Optional: Adjust hover color */
+    }
+}
+
 @font-face {
     font-family: metal;
     src: url(Metal\ Head.otf);
@@ -148,23 +169,3 @@ span{font-family: metal!important; font-weight: 100;}
             transform: scale(0.95);
         }
 
-/* Media query for larger screens (horizontal layout) */
-@media (min-width: 768px) {
-    .nav-menu {
-        display: flex; /* Changes layout to horizontal */
-    }
-
-    .nav-menu li {
-        display: inline; /* Aligns list items horizontally */
-    }
-
-    .nav-menu a {
-        display: inline-block; /* Ensures padding and alignment in horizontal layout */
-        padding: 10px 20px; /* Adjust padding as needed */
-        border-bottom: none; /* Removes border in horizontal layout */
-    }
-
-    .nav-menu a:hover {
-        background-color: #444; /* Optional: Adjust hover color */
-    }
-}
